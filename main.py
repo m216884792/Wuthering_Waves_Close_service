@@ -13,9 +13,3 @@ while True:
     if int(run('sc query "AntiCheatExpert Service" | find /c "START"', shell=True, capture_output=True, text=True))>0:  #服務狀態
       run('sc stop "AntiCheatExpert Service"', shell=True)  #關閉服務
 
-
-
-
-
-run(wmic process where name="SGuard64.exe" CALL setpriority "idle", shell=True)
-run(wmic process where name="SGuardSvc64.exe" CALL setpriority "idle", shell=True)
