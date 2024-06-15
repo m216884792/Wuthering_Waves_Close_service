@@ -2,7 +2,7 @@ from subprocess import Popen,check_output,run
 from time import sleep
 
 
-if int(run(sc query "AntiCheatExpert Service" | find /c "FAILED", shell=True, capture_output=True, text=True))!=0: #沒有服務
+if int(run(sc query "Wurthering_Wave_Close_service" | find /c "FAILED", shell=True, capture_output=True, text=True))!=0: #沒有服務
   run(f'sc create "Wurthering_Wave_Close_service" binpath = "{os.getcwd()}/main.exe" start= auto displayname = "鳴潮自動停止ACE服務"', shell=True) #創建服務
   run('sc start "Wurthering_Wave_Close_service"', shell=True) #啟動服務
 
