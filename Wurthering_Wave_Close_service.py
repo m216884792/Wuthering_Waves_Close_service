@@ -3,7 +3,7 @@ from mod.groceries import strPopen
 
 
 exename ='Wuthering Waves.exe'
-exename2 ='Start_Wurthering_Wave_Close.exe'
+exename2 ='Start_Wurthering_Wave'
 
 while True:
   sleep(10)
@@ -12,4 +12,4 @@ while True:
         strPopen('sc stop "AntiCheatExpert Service"')  #關閉服務
   
   if len(strPopen(f'tasklist | find "{exename2}"'))<10:
-  break
+    break
