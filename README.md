@@ -12,9 +12,9 @@
 ![image](https://github.com/m216884792/Wurthering_Wave_Close_service/blob/main/img/1.png)  
 
 開啟檔案位置
-![image](https://github.com/m216884792/Wurthering_Wave_Close_service/blob/main/img/2.png)
+![image](https://github.com/m216884792/Wurthering_Wave_Close_service/blob/main/img/2.png)  
 
 將檔案解壓縮至此資料夾
-![image](https://github.com/m216884792/Wurthering_Wave_Close_service/blob/main/img/3.png)
+![image](https://github.com/m216884792/Wurthering_Wave_Close_service/blob/main/img/3.png)  
 
 
