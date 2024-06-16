@@ -8,5 +8,7 @@
 請把資料夾加入防毒排除項目
 請使用系統管理員開啟
 
+對鳴潮->右鍵->內容
 ![image](https://github.com/m216884792/Wurthering_Wave_Close_service/blob/main/img/1.png)
 ***
+
