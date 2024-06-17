@@ -1,16 +1,18 @@
 import os
-from mod.groceries import strPopen,nonstrPopen
+from mod.groceries import strPopen
 from time import sleep
+from mod.Wurthering_Wave_Close_service import checkth
+from threading import Thread
 
 
-servicename = 'Wurthering_Wave_Close_service'
 exename ='KRInstallExternal.exe'
 
-if len(strPopen(f'tasklist | find "{servicename}"'))<10: #有無運行
-  nonstrPopen(f'{os.getcwd()}/{servicename}.exe')
+Thread(target=checkth,args=[5]).start()
 
 strPopen(f'{os.getcwd()}/launcher.exe')
 
 while len(strPopen(f'tasklist | find "{exename}"'))>10:
   sleep(10)
+
+os._exit(1)
 
