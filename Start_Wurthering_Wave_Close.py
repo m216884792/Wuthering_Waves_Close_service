@@ -1,18 +1,21 @@
+
 import os
-from mod.groceries import strPopen
+from mod.groceries import strPopen,nonstrPopen
 from time import sleep
 from mod.Wurthering_Wave_Close_service import checkth
-from threading import Thread
 
 
 exename ='KRInstallExternal.exe'
 
-Thread(target=checkth,args=[5]).start()
+check=checkth(5)
+check.start()
 
-strPopen(f'{os.getcwd()}/launcher.exe')
+nonstrPopen(f'{os.getcwd()}/launcher.exe')
 
-while len(strPopen(f'tasklist | find "{exename}"'))>10:
+while True:
   sleep(10)
+  if len(strPopen(f'tasklist | find "{exename}"'))<10:
+    break
 
-os._exit(1)
+check.stop()
 
