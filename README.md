@@ -1,4 +1,4 @@
-# Wurthering_Wave_Close_service
+# Wuthering Waves Close service
 
 # 免責聲明
 此檔案僅為方便停用AntiCheatExpert Service相關服務絕不觸碰其他服務  
